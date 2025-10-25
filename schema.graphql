@@ -1,0 +1,8 @@
+type CreatorFactory_SetupNewContract {
+  id: ID!
+  address: String!
+  contractURI: String!
+  defaultAdmin: String!
+  chainId: Int!
+  transactionHash: String!
+}

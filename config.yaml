@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=./node_modules/envio/evm.schema.json
+name: inprocess-moments-indexer
+contracts:
+  - name: CreatorFactory
+    handler: src/EventHandlers.ts
+    events:
+      - event: SetupNewContract(address indexed newContract, address indexed creator, address indexed defaultAdmin, string contractURI, string name, (uint32, uint32, address) defaultRoyaltyConfiguration)
+        field_selection:  
+          transaction_fields:
+            - hash
+
+networks:
+  - id: 84532
+    start_block: 0
+    contracts:
+      - name: CreatorFactory
+        address:
+          - 0x6832A997D8616707C7b68721D6E9332E77da7F6C
+
+  - id: 8453
+    start_block: 0
+    contracts:
+      - name: CreatorFactory
+        address:
+          - 0x540C18B7f99b3b599c6FeB99964498931c211858
+
+unordered_multichain_mode: true
+preload_handlers: true
