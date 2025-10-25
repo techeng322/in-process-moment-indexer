@@ -11,14 +11,14 @@ contracts:
 
 networks:
   - id: 84532
-    start_block: 0
+    start_block: 23208989
     contracts:
       - name: CreatorFactory
         address:
           - 0x6832A997D8616707C7b68721D6E9332E77da7F6C
 
   - id: 8453
-    start_block: 0
+    start_block: 27712746
     contracts:
       - name: CreatorFactory
         address:
