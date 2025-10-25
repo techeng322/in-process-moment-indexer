@@ -5,4 +5,5 @@ type CreatorFactory_SetupNewContract {
   defaultAdmin: String!
   chainId: Int!
   transactionHash: String!
+  blockNumber: Int!
 }
