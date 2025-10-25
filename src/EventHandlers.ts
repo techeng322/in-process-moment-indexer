@@ -11,7 +11,8 @@ CreatorFactory.SetupNewContract.handler(async ({ event, context }) => {
     defaultAdmin: event.params.defaultAdmin,
     chainId: event.chainId,
     transactionHash: event.transaction.hash,
-    blockNumber: event.block.number
+    blockNumber: event.block.number,
+    blockTimestamp: event.block.timestamp,
   };
   context.CreatorFactory_SetupNewContract.set(entity);
 });

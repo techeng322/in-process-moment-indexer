@@ -6,4 +6,5 @@ type CreatorFactory_SetupNewContract {
   chainId: Int!
   transactionHash: String!
   blockNumber: Int!
+  blockTimestamp: Int!
 }
